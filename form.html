@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="/add" method="POST">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Sign Up">
+    </form>
+    <hr>
+
+    <h1>Log In</h1>
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Login">
+    </form>
+    <hr>
+
+    <h2>Update username</h2>
+    <form action="/update" method="POST">
+        <input type="text" name="cname" placeholder="Current username">
+        <input type="text" name="nname" placeholder="New username">
+        <input type="submit" value="Update">
+    </form>
+    <hr>
+
+    <h2>Delete account</h2>
+    <form action="/delete" method="POST">
+        <input type="text" name="username" placeholder="Username">
+        <input type="submit" value="Delete">
+    </form>
+    <hr>
+
+    <button><a href="/display" target="_blank">Display Data</a></button>
+    <hr>
+    
+</body>
+</html>
